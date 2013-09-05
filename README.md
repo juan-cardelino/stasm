@@ -1,7 +1,7 @@
-STASM build scripts
-===================
+STASM 4 build scripts
+=====================
 
-This is a set of scripts, mainly cmake ones, that can be used to compile the STASM library.
+This is a set of scripts, mainly cmake ones, that can be used to compile the STASM library (version 4 and later).
 * CMakeLists.txt: cmake build script to compile the STASM library and its examples
 * STASMConfig.cmake.in: template to generate a STASMConfig.cmake which could be useful to use STASM in a library from another project
 
