@@ -21,7 +21,7 @@ Unix
 * run cmake and generate a makefile
 * it is recommended to use a different build directory, in my case I will build into stasm4.0.0/@build
 * enter stasm4.0.0/@build and compile with make or your favorite IDE (tested with make and netbeans)
-* you will end up with the minimal example compiled and a static library libstasm.a
+* you will end up with the __minimal__ and __minimal2__ examples compiled and a static library __libstasm.a__
 
 
 Tested in:
