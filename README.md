@@ -7,9 +7,9 @@ This is a set of scripts, mainly cmake ones, that can be used to compile the STA
 
 Changelog
 =========
-2013.05: created CMakeLists.txt and tested on linux and mac
-2014.01:  * added comments of windows compilation
-          * added suppor for STASM 4.1.0
+2013.05.09: created CMakeLists.txt and tested on linux and mac
+2014.01.14:       * added comments of windows compilation
+                  * added support for STASM 4.1.0
           
 Instructions
 ============
@@ -18,11 +18,11 @@ Unix
 ----
 
 * Download STASM source code from: http://www.milbo.users.sonic.net/stasm/ 
-* uncompress it, for example to stasm4.0.0
-* copy the provided files (CMakeLists.txt and STASMConfig.cmake.in)
+* uncompress it, for example to stasm4.1.0. I will refer to this directory as STASM_DIR
+* copy the provided files (CMakeLists.txt and STASMConfig.cmake.in) to STASM_DIR
 * run cmake and generate a makefile
-* it is recommended to use a different build directory, in my case I will build into stasm4.0.0/@build
-* enter stasm4.0.0/@build and compile with make or your favorite IDE (tested with make and netbeans)
+* it is recommended to use a different build directory, in my case I will build into STASM_DIR/@build
+* enter STASM_DIR/@build and compile with make or your favorite IDE (tested with make and netbeans)
 * you will end up with the __minimal__ and __minimal2__ examples compiled and a static library __libstasm.a__
 
 
@@ -33,7 +33,7 @@ Tested in:
 * OSX 10.9, STASM 4.1.0, cmake 2.8.12, clang 5.0, make 3.81, OpenCV 2.4.7
 
 User experiences:
-* I have reports of success in windows, however I'm didn't test it myself. Minor tweaking of libpng required.
+* I have reports of success in windows, however I'm didn't test it myself. Minor tweaking of libpng might be required.
 
 ToDo
 ============
