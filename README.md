@@ -28,6 +28,8 @@ Unix
 Tested in:
 * Ubuntu 13.04, STASM 4.0.0, cmake 2.8.10.1, gcc 4.7.3, make 3.81, netbeans 7.3.1
 * OSX 10.8, STASM 4.0.0, cmake 2.8.9, gcc-clang 4.2, make XX, netbeans 7.2
+* OSX 10.9, STASM 4.0.0, cmake 2.8.9, clang 5.0, make XX
+
 User experiences:
 * I have reports of success in windows, however I'm didn't test it myself. Minor tweaking of libpng required.
 
