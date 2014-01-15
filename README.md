@@ -7,9 +7,13 @@ This is a set of scripts, mainly cmake ones, that can be used to compile the STA
 
 Changelog
 =========
-2013.05.09: created CMakeLists.txt and tested on linux and mac
-2014.01.14:       * added comments of windows compilation
-                  * added support for STASM 4.1.0
+
+2013.05.09: 
+* created CMakeLists.txt and tested on linux and mac
+ 
+2014.01.14:       
+* added comments of windows compilation
+* added support for STASM 4.1.0
           
 Instructions
 ============
