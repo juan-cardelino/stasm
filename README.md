@@ -35,13 +35,11 @@ Tested in:
 * OSX 10.8, STASM 4.0.0, cmake 2.8.9, gcc-clang 4.2, make XX, netbeans 7.2
 * OSX 10.9, STASM 4.0.0, cmake 2.8.12, clang 5.0, make 3.81, OpenCV 2.4.7
 * OSX 10.9, STASM 4.1.0, cmake 2.8.12, clang 5.0, make 3.81, OpenCV 2.4.7
-* Windows8 64bit, STASM 4.1.0, cmake 2.8.11, Visual Studio 11 update 4,  OpenCV 2.4.2. So far it compiles but not runs (I think is a particular problem of mine)
+* Windows 8 64bit, STASM 4.1.0, cmake 2.8.11, Visual Studio 10,  OpenCV 2.4.2. Built on 32bits
 
-User experiences:
-* I have reports of success in windows, however I haven't fully tested it myself. 
 
 ToDo
 ============
-* To generate a proper windows dll (with exports) it is required to add some #defines
-* Properly test it on windows
+* In order to generate a proper windows dll (with exports) it is required to add some #defines
+* Extend windows testing (64 bits, VS11)
 * Add example of using stasm as an external library
