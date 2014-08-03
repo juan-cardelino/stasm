@@ -65,3 +65,7 @@ ToDo
 * In order to generate a proper windows dll (with exports) it is required to add some #defines
 * Extend windows testing (64 bits, VS11)
 
+Acknowledgements
+================
+* Juan Cardelino: maintainance and initial version
+* Yuji Ojamada: corrections and improvements
