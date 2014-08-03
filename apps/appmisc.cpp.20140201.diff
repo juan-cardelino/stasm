@@ -1,0 +1,14 @@
+--- appmisc.cpp.orig	2013-12-28 06:39:28.000000000 +0900
++++ appmisc.cpp	2014-02-01 15:57:01.144581515 +0900
+@@ -365,6 +365,11 @@
+         const int err =
+ #if _MSC_VER // microsoft
+             _mkdir(path);
++// Added by Yuji Oyamada, 2013.02.01
++// from here
++#elif __GNUC__
++            mkdir(path, 0777);
++// to here
+ #else
+             mkdir(path); // TODO some systems want: mkdir(path, 0777);
+ #endif

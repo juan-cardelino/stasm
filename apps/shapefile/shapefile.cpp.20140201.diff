@@ -1,0 +1,20 @@
+--- shapefile.cpp.orig	2013-12-28 06:39:28.000000000 +0900
++++ shapefile.cpp	2014-02-01 15:56:38.480581444 +0900
+@@ -725,8 +725,15 @@
+ 
+     strcpy(shapepath, *argv);
+     int n = STRNLEN(shapepath, SLEN);
+-    if (n < 6 || _stricmp(shapepath + n - 6, ".shape"))
+-        Err("Invalid shape file name %s (expected a .shape suffix)", shapepath);
++
++// Modified by Yuji Oyamada, 2013.02.01
++    #if _MSC_VER // microsoft
++        if (n < 6 || _stricmp(shapepath + n - 6, ".shape"))
++            Err("Invalid shape file name %s (expected a .shape suffix)", shapepath);
++    #else
++        if (n < 6 || strcmp(shapepath + n - 6, ".shape"))
++            Err("Invalid shape file name %s (expected a .shape suffix)", shapepath);
++    #endif
+ 
+     nshapes = 0;
+     if (argc > 1)
