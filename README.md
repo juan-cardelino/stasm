@@ -62,7 +62,7 @@ In the __external__ directory you will find and example about
 
 ToDo
 ============
-* In order to generate a proper windows dll (with exports) it is required to add some #defines
+* In order to generate a proper windows dll (with exports) it is required to add some #defines. But it could work as is.
 * Extend windows testing (64 bits, VS11)
 
 Acknowledgements
