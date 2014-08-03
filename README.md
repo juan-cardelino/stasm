@@ -37,6 +37,11 @@ Unix
 * Download STASM source code from: http://www.milbo.users.sonic.net/stasm/ 
 * uncompress it, for example to stasm4.1.0. I will refer to this directory as STASM_DIR
 * unpack the provided files to STASM_DIR
+* patch the source files:
+  * cd STASM_DIR/apps
+  * patch -p0 < appmisc.cpp.20140201.diff
+  * cd STASM_DIR/apps/shapefile
+  * patch -p0 < shapefile.cpp.20140201.diff
 * run cmake and generate a makefile: it is recommended to use a different build directory, in my case I will build into STASM_DIR/@build
 * enter STASM_DIR/@build and compile with make or your favorite IDE (tested with make and netbeans)
 * you will end up with the __minimal__ and __minimal2__ examples compiled and a static library __libstasm.a__
