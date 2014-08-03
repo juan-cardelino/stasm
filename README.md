@@ -72,5 +72,6 @@ ToDo
 
 Acknowledgements
 ================
+* Stephen Milborrow: for kindly sharing his research and tools and for taking the time to answer everybody.
 * Juan Cardelino: maintainance and initial version
 * Yuji Ojamada: corrections and improvements
